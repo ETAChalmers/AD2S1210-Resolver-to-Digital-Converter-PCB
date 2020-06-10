@@ -1,5 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:Main-cache
+LIBS:power
+LIBS:device
+LIBS:74xx
+LIBS:audio
+LIBS:interface
+LIBS:resolver-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -60,17 +65,6 @@ F 1 "GND" H 6455 2777 50  0000 C CNN
 F 2 "" H 6450 2950 50  0001 C CNN
 F 3 "" H 6450 2950 50  0001 C CNN
 	1    6450 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Resolver:AD2S1210 U?
-U 2 1 5EF0E7FF
-P 7400 2450
-F 0 "U?" H 7700 2950 50  0000 L CNN
-F 1 "AD2S1210" H 7550 2850 50  0000 L CNN
-F 2 "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm" H 9900 2200 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD2S1210.pdf" H 9900 2200 50  0001 C CNN
-	2    7400 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -531,4 +525,15 @@ Wire Notes Line
 	850  3400 5400 3400
 Text Notes 6400 1400 0    50   ~ 10
 Ei boi ska vi byta till 5VA och 5VD som referensdesignen?
+$Comp
+L Resolver:AD2S1210 U?
+U 2 1 5EE2BE29
+P 7400 2450
+F 0 "U?" H 7700 2950 50  0000 L CNN
+F 1 "AD2S1210" H 7600 2850 50  0000 L CNN
+F 2 "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm" H 7500 2450 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD2S1210.pdf" H 7500 2450 50  0001 C CNN
+	2    7400 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,5 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:Main-cache
+LIBS:power
+LIBS:device
+LIBS:74xx
+LIBS:audio
+LIBS:interface
+LIBS:resolver-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693

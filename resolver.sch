@@ -1,5 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:Main-cache
+LIBS:power
+LIBS:device
+LIBS:74xx
+LIBS:audio
+LIBS:interface
+LIBS:resolver-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -24,8 +29,6 @@ Wire Notes Line
 	6400 3650 6400 4800
 Text Notes 10850 2550 0    50   ~ 0
 Vdrive voltage determines interface opreration voltage.
-Text Notes 8600 2150 0    98   ~ 0
-Resolver to digital converter
 Text Notes 6500 5250 0    79   ~ 0
 Parallel data format
 Text Notes 6500 4050 0    79   ~ 0
@@ -95,17 +98,6 @@ Wire Wire Line
 	8000 4050 9350 4050
 Wire Wire Line
 	9000 3850 9350 3850
-$Comp
-L Resolver:AD2S1210 U?
-U 1 1 5EEF5A98
-P 8750 1900
-F 0 "U?" H 10700 1050 50  0000 C CNN
-F 1 "AD2S1210" H 10600 950 50  0000 C CNN
-F 2 "" H 11250 1650 50  0001 C CNN
-F 3 "" H 11250 1650 50  0001 C CNN
-	1    8750 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9000 3950 9350 3950
 Text Label 9000 3950 0    50   ~ 0
@@ -473,4 +465,15 @@ Wire Wire Line
 	6400 8300 6050 8300
 Wire Wire Line
 	6400 8450 6050 8450
+$Comp
+L Resolver:AD2S1210 U?
+U 1 1 5EE22991
+P 8750 1900
+F 0 "U?" H 10150 965 50  0000 C CNN
+F 1 "AD2S1210" H 10150 874 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm" H 8850 1900 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD2S1210.pdf" H 8850 1900 50  0001 C CNN
+	1    8750 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
